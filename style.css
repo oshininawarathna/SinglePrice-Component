@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+.container {
+  margin-top: 7rem;
+}
+.card {
+  width: 40rem;
+  height: 15rem;
+  border: 1px solid white;
+  margin: 0 auto;
+  box-shadow: 1px 1px wheat;
+}
+
+.card__one {
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 1px 0 2px wheat;
+}
+.card__two {
+  display: flex;
+  border-radius: 0 0 7px 7px;
+}
+.box__one {
+  background-color: var(--Cyan);
+  height: 15rem;
+  width: 21rem;
+  border-radius: 0 0 0 7px;
+}
+.box__two {
+  background-color: var(--Cyan);
+  height: 15rem;
+  width: 21rem;
+  border-radius: 0 0 7px 0;
+  opacity: 0.8;
+}
+.main__text {
+  color: var(--Cyan);
+}
+.card__day {
+  color: var(--BrightYellow);
+}
+.text__paragraph {
+  color: var(--GrayishBlue);
+}
+.box__text {
+  color: var(--LightGray);
+  font-size: 1rem;
+}
+span {
+  color: var(--LightGray);
+}
+.box__money {
+  color: var(--GrayishBlue);
+}
+.box__access {
+  color: var(--LightGray);
+  font-size: 16px;
+}
+.box__button {
+  width: 13rem;
+  height: 2.5rem;
+  background-color: var(--BrightYellow);
+  color: var(--LightGray);
+  font-size: 16px;
+  border-radius: 0.3rem;
+  border: none;
+}
+.box_topic {
+  color: var(--LightGray);
+  font-size: 1rem;
+}
+.box__tutorial {
+  color: var(--LightGray);
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flexbox;
+    width: 20rem;
+    height: 20rem;
+  }
+  .card__one {
+    margin-left: 5rem;
+  }
+  .card__two {
+    display: inline-block;
+  }
+  .box__one {
+    margin-left: 5rem;
+    width: 18.2rem;
+    white-space: normal;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .box__two {
+    margin-left: 5rem;
+    width: 18.2rem;
+    padding: 1rem;
+    height: 13rem;
+    border-radius: o 7px 7px 0;
+  }
+}
